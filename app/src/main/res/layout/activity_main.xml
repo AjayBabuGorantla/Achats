@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.anonymous.achats.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+       >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#76ff03"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:fontFamily="@font/bangers"
+                android:text="UniKart"
+                android:textColor="#000"
+                android:textSize="30sp" />
+
+            <SearchView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:background="#ffff"
+                android:queryHint="Search for Products"></SearchView>
+
+        </LinearLayout>
+
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="6"
+                android:rowCount="1">
+
+                <LinearLayout
+                    style="@style/general"
+                    android:layout_margin="7dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        style="@style/general"
+                        android:background="@drawable/smartphone" />
+
+                    <TextView
+                        style="@style/icon_selection"
+                        android:text="Mobiles" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/general"
+                    android:layout_margin="7dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        style="@style/general"
+                        android:background="@drawable/fashion" />
+
+                    <TextView
+                        style="@style/icon_selection"
+                        android:text="Fashion" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/general"
+                    android:layout_margin="7dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        style="@style/general"
+                        android:background="@drawable/appliance" />
+
+                    <TextView
+                        style="@style/icon_selection"
+                        android:text="Apppliances" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/general"
+                    android:layout_margin="7dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        style="@style/general"
+                        android:background="@drawable/home" />
+
+                    <TextView
+                        style="@style/icon_selection"
+                        android:text="Home" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/general"
+                    android:layout_margin="7dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        style="@style/general"
+                        android:background="@drawable/book" />
+
+                    <TextView
+                        style="@style/icon_selection"
+                        android:text="Books" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/general"
+                    android:layout_margin="7dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        style="@style/general"
+                        android:background="@drawable/electronics" />
+
+                    <TextView
+                        style="@style/icon_selection"
+                        android:text="Electronics" />
+                </LinearLayout>
+            </GridLayout>
+        </HorizontalScrollView>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
