@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -9,8 +8,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        >
+        android:orientation="vertical">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -38,123 +36,61 @@
 
         </LinearLayout>
 
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                style="@style/general"
+                android:background="@drawable/mobile" />
+
+            <ImageView
+                style="@style/general"
+                android:background="@drawable/shirts" />
+
+            <ImageView
+                style="@style/general"
+                android:background="@drawable/coffeemaker" />
+
+            <ImageView
+                style="@style/general"
+                android:background="@drawable/furniture" />
+
+            <ImageView
+                style="@style/general"
+                android:background="@drawable/books" />
+
+            <ImageView
+                style="@style/general"
+                android:background="@drawable/electronic" />
+
+        </LinearLayout>
 
         <HorizontalScrollView
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="fill_parent"
             android:scrollbars="none">
 
-            <GridLayout
-                android:layout_width="match_parent"
-                android:layout_height="55dp"
-                android:columnCount="6"
-                android:rowCount="1">
-
-                <LinearLayout
-                    style="@style/general"
-                    android:layout_margin="7dp"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        style="@style/general"
-                        android:background="@drawable/mobile" />
-
-                    <TextView
-                        style="@style/icon_selection"
-                        android:text="Mobiles"
-                        android:textSize="10dp"/>
-                </LinearLayout>
-
-                <LinearLayout
-                    style="@style/general"
-                    android:layout_margin="7dp"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        style="@style/general"
-                        android:background="@drawable/shirts" />
-
-                    <TextView
-                        style="@style/icon_selection"
-                        android:text="Fashion" />
-                </LinearLayout>
-
-                <LinearLayout
-                    style="@style/general"
-                    android:layout_margin="7dp"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        style="@style/general"
-                        android:background="@drawable/coffeemaker" />
-
-                    <TextView
-                        style="@style/icon_selection"
-                        android:text="Appliances" />
-                </LinearLayout>
-
-                <LinearLayout
-                    style="@style/general"
-                    android:layout_margin="7dp"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        style="@style/general"
-                        android:background="@drawable/furniture" />
-
-                    <TextView
-                        style="@style/icon_selection"
-                        android:text="Home" />
-                </LinearLayout>
-
-                <LinearLayout
-                    style="@style/general"
-                    android:layout_margin="7dp"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        style="@style/general"
-                        android:background="@drawable/books" />
-
-                    <TextView
-                        style="@style/icon_selection"
-                        android:text="Books" />
-                </LinearLayout>
-
-                <LinearLayout
-                    style="@style/general"
-                    android:layout_margin="7dp"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        style="@style/general"
-                        android:background="@drawable/electronic" />
-
-                    <TextView
-                        style="@style/icon_selection"
-                        android:text="Electronics" />
-                </LinearLayout>
-            </GridLayout>
-        </HorizontalScrollView>
-
-        <HorizontalScrollView
-            android:layout_width="match_parent"
-            android:layout_height="130dp"
-            android:scrollbars="none">
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="170dp"
+                android:layout_marginTop="10dp"
                 android:orientation="horizontal">
 
                 <ImageView
-                    android:layout_width="wrap_content"
+                    android:layout_width="370dp"
                     android:layout_height="match_parent"
-                    android:clickable="true"
-                    android:src="@drawable/offer2" />
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/offer2" />
 
+                <ImageView
+                    android:layout_width="370dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="match_parent"
+                   android:background="@drawable/offer" />
             </LinearLayout>
         </HorizontalScrollView>
-
     </LinearLayout>
-
 </android.support.constraint.ConstraintLayout>
